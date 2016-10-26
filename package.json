@@ -1,11 +1,15 @@
 {
-  "name": "solarized-dark-syntax",
+  "name": "solarized-dark-ligatures-syntax",
   "theme": "syntax",
-  "version": "1.1.1",
-  "description": "A dark syntax theme using the solarized colors",
-  "repository": "https://github.com/atom/solarized-dark-syntax",
+  "version": "0.0.1",
+  "description": "A dark syntax theme using the solarized colors and ligatures from Fira Code",
+  "repository": "https://github.com/craveytrain/solarized-dark-ligatures-syntax",
   "license": "MIT",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.1.0 <2.0.0"
   }
 }

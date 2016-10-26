@@ -1,51 +1,51 @@
-.syntax--source.syntax--css {
+.source.css {
 
-  .syntax--punctuation {
-    &.syntax--separator,
-    &.syntax--terminator {
+  .punctuation {
+    &.separator,
+    &.terminator {
       color: @syntax-text-color;
     }
-    &.syntax--property-list.syntax--begin,
-    &.syntax--property-list.syntax--end {
+    &.property-list.begin,
+    &.property-list.end {
       color: @red;
     }
-    &.syntax--section.syntax--function {
+    &.section.function {
       color: @cyan;
     }
   }
 
-  .syntax--entity.syntax--name {
+  .entity.name {
     color: @green;
   }
-  .syntax--attribute-name.syntax--class,
-  .syntax--id {
+  .attribute-name.class,
+  .id {
     color: @blue;
   }
-  .syntax--pseudo-element,
-  .syntax--pseudo-class {
+  .pseudo-element,
+  .pseudo-class {
     color: @orange;
   }
 
-  .syntax--property-value {
+  .property-value {
     color: @cyan;
   }
-  .syntax--constant.syntax--numeric {
+  .constant.numeric {
     color: @cyan;
-    .syntax--unit {
+    .unit {
       color: @cyan;
     }
   }
-  .syntax--rgb-value {
+  .rgb-value {
     color: @cyan;
   }
-  .syntax--support.syntax--constant {
+  .support.constant {
     color: @cyan;
-    &.syntax--media {
+    &.media {
       color: @red;
     }
   }
 
-  .syntax--keyword.syntax--important {
+  .keyword.important {
     color: @red;
   }
 
@@ -55,9 +55,9 @@
 // Less/Sass should have their own files,
 // but for just a single override, here should be fine too
 
-.syntax--source.syntax--less,
-.syntax--source.syntax--scss {
-  .syntax--keyword.syntax--unit {
+.source.less,
+.source.scss {
+  .keyword.unit {
     color: @cyan;
   }
 }

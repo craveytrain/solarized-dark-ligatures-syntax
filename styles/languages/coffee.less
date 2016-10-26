@@ -1,58 +1,55 @@
-.syntax--source.syntax--coffee {
-  .syntax--support.syntax--class {
+.source.coffee {
+  .support.class {
     color: @green;
   }
 
-  .syntax--variable,
-  .syntax--entity.syntax--name.syntax--function,
-  .syntax--entity.syntax--name.syntax--class {
+  .variable,
+  .entity.name.function,
+  .entity.name.class {
     color: @blue;
   }
-  .syntax--variable.syntax--parameter.syntax--function {
+  .variable.parameter.function {
     color: @syntax-text-color;
   }
-  .syntax--variable.syntax--other.syntax--readwrite {
+  .variable.other.readwrite {
     color: @green;
   }
 
-  .syntax--storage.syntax--type.syntax--function {
+  .storage.type.function {
     color: @green;
   }
 
-  .syntax--entity.syntax--name {
+  .entity.name {
     color: @syntax-text-color;
   }
 
-  .syntax--meta.syntax--brace {
-    &.syntax--round,
-    &.syntax--square {
+  .meta.brace {
+    &.round,
+    &.square {
       color: @syntax-text-color;
     }
   }
-  .syntax--meta.syntax--delimiter {
+  .meta.delimiter {
     color: @syntax-text-color;
   }
 
-  .syntax--storage.syntax--type.syntax--class {
+  .storage.type.class {
     color: @green;
   }
 
-  .syntax--punctuation.syntax--terminator {
+  .punctuation.terminator {
     color: @syntax-text-color;
   }
 
-  .syntax--punctuation.syntax--section.syntax--embedded {
+  .punctuation.section.embedded {
     color: @red;
   }
-  .syntax--embedded.syntax--source {
-    color: @syntax-text-color;
-  }
 
-  .syntax--constant.syntax--numeric {
+  .constant.numeric {
     color: @magenta;
   }
 
-  .syntax--constant.syntax--language.syntax--boolean {
+  .constant.language.boolean {
     color: @yellow;
   }
 }

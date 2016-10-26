@@ -1,78 +1,78 @@
-.syntax--source.syntax--scala {
-  .syntax--variable {
+.source.scala {
+  .variable {
     color: @syntax-emphasized-color;
   }
 
-  .syntax--declaration {
+  .declaration {
     color: @syntax-emphasized-color;
     font-weight: bold;
   }
-  .syntax--comparison {
+  .comparison {
     color: @syntax-emphasized-color;
   }
-  .syntax--class, .syntax--type {
+  .class, .type {
     color: @yellow;
   }
-  .syntax--val {
+  .val {
     font-weight: normal;
   }
-  .syntax--variable {
+  .variable {
     font-weight: bold;
   }
-  .syntax--variable.syntax--parameter {
+  .variable.parameter {
     color: @violet;
     font-weight: normal;
   }
-  .syntax--control.syntax--flow {
+  .control.flow {
     color: @syntax-emphasized-color;
     font-weight: bold;
   }
-  .syntax--constant.syntax--language {
+  .constant.language {
     color: @syntax-emphasized-color;
     font-weight: bold;
   }
-  .syntax--function.syntax--declaration {
+  .function.declaration {
     color: @violet;
   }
-  .syntax--modifier.syntax--other {
+  .modifier.other {
     font-weight: bold;
   }
-  .syntax--package {
+  .package {
     color: @syntax-emphasized-color;
   }
-  .syntax--variable.syntax--import {
+  .variable.import {
     font-weight: normal;
   }
 
-  .syntax--type {
-    .syntax--bounds, .syntax--class {
+  .type {
+    .bounds, .class {
       color: @violet;
     }
   }
 
-  .syntax--documentation {
-    :not(.syntax--embedded) {
+  .documentation {
+    :not(.embedded) {
       // out of scope ?
-      // https://github.syntax--com/atom/link
-      &.syntax--link.syntax--entity {
+      // https://github.com/atom/link
+      &.link.entity {
         color: @blue;
         text-decoration: underline;
       }
-      .syntax--class, .syntax--parameter {
+      .class, .parameter {
         color: @syntax-emphasized-color;
       }
-      .syntax--description {
+      .description {
         color: @syntax-comment-color;
       }
     }
   }
 
-  .syntax--embedded {
+  .embedded {
     color: darken(@syntax-emphasized-color, 15%);
 
     // so we dont confused it with normal expressions
     font-style: italic;
-    .syntax--margin, .syntax--delimiters {
+    .margin, .delimiters {
       font-style: normal;
     }
   }
