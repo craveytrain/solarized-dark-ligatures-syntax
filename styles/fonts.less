@@ -1,0 +1,60 @@
+@ligature-font: 'Fira Code';
+
+@font-face{
+    font-family: @ligature-font;
+    src: url('atom://solarized-dark-ligatures-syntax/font/FiraCode-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: @ligature-font;
+    src: url('atom://solarized-dark-ligatures-syntax/font/FiraCode-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: @ligature-font;
+    src: url('atom://solarized-dark-ligatures-syntax/font/FiraCode-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: @ligature-font;
+    src: url('atom://solarized-dark-ligatures-syntax/font/FiraCode-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+atom-text-editor {
+  text-rendering: optimizeLegibility;
+
+  &::shadow {
+    .source,
+    .text
+    {
+      .keyword {
+        &.operator,
+        &.bitwise
+        {
+          font-family: @ligature-font;
+        }
+      }
+
+      .meta {
+        &.arrow,
+        &.selector,
+        .hex
+        {
+          font-family: @ligature-font;
+        }
+      }
+
+      .punctuation {
+        font-family: @ligature-font;
+      }
+    }
+  }
+}
